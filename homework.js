@@ -114,13 +114,68 @@
 //    }
 // }
 
-// Find the Median
+// // Find the Median
 
-const getMedian = (arr) => {
-    const middleIndex = Math.floor(arr.length / 2);
-    console.log('mid', middleIndex)
-      const sortedArr = [...arr].sort((a, b) => a - b);
-      console.log('nums', sortedArr)
-    return arr.length % 2 !== 0 ? sortedArr[middleIndex] : (sortedArr[middleIndex - 1] + sortedArr[middleIndex]) / 2;
-  };
-  console.log(getMedian([14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]));
+// const getMedian = (arr) => {
+//     const middleIndex = Math.floor(arr.length / 2);
+//     console.log('mid', middleIndex)
+//       const sortedArr = [...arr].sort((a, b) => a - b);
+//       console.log('nums', sortedArr)
+//     return arr.length % 2 !== 0 ? sortedArr[middleIndex] : (sortedArr[middleIndex - 1] + sortedArr[middleIndex]) / 2;
+//   };
+//   console.log(getMedian([14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]));
+
+// Return of the Closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+const kristynsShoe = kristynsCloset.splice(0, 1);
+console.log(kristynsShoe);
+thomsCloset[2].push(kristynsShoe[0]);
+console.log(thomsCloset);
+
+// Dress Us Up
+
+const kristynsOutfit = {
+    accessories: kristynsCloset[4],
+    shirt: kristynsCloset[2],
+    pants: kristynsCloset[3],
+}
+
+const tomsOutfit = {
+    accessories: thomsCloset[2][1],
+    shirt: thomsCloset[0][1],
+    pants: thomsCloset[1][2],
+}
+
+console.log(`Kristyn is wearing ${kristynsOutfit.accessories}, ${kristynsOutfit.shirt}, ${kristynsOutfit.pants}.`);
+console.log(`Tom is wearing ${tomsOutfit.accessories}, ${tomsOutfit.shirt}, ${tomsOutfit.pants}.`);
