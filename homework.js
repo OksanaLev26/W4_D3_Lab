@@ -44,10 +44,44 @@
 // wolfy[0] = 'Gameboy';
 // console.log(wolfy);
 
-// Yell at the Ninja Turtles
+// // Yell at the Ninja Turtles
 
-const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
-for (let turtle of ninjaTurtles) {
-    console.log(turtle.toLocaleUpperCase());
-}
+// for (let turtle of ninjaTurtles) {
+//     console.log(turtle.toLocaleUpperCase());
+// }
+
+// Methods, Revisited
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies.indexOf('Titanic'));
+
+const newFavMovies = [...favMovies];
+
+newFavMovies.sort();
+console.log(newFavMovies);
+
+favMovies.pop();
+
+favMovies.push('Guardians of the Galaxy');
+
+favMovies.reverse();
+
+favMovies.shift();
+
+const newLength = favMovies.unshift();
+
+const index = favMovies.indexOf('Django Unchained');
+
+favMovies.splice(index, 1, 'Avatar');
+const arrLength = favMovies.length;
+
+const middleIndex = arrLength/2;
+
+const slicedArr = favMovies.slice(middleIndex);
+
+console.log(slicedArr);
+console.log(favMovies);
+console.log(favMovies.indexOf('Fast and Furious'));
