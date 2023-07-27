@@ -98,18 +98,29 @@
 
 // console.log(whereIsWaldo[2][1][1]);
 
-// Excited Kitten
+// // Excited Kitten
 
 // for (let i = 1; i <= 20; i++) {
 //     console.log(`${i}. Love me, pet me! HSSSSSS!`);
 // }
 
-for (let i = 1; i <= 20; i++) {
-   const phrases = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...' ];
-   const randomIndex = Math.round(Math.random() * 2);
-   if (i % 2 === 0) {
-    console.log(`${i}. ${phrases[randomIndex]}`);
-   } else {
-    console.log(`${i}. Love me, pet me! HSSSSSS!`)
-   }
-}
+// for (let i = 1; i <= 20; i++) {
+//    const phrases = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...' ];
+//    const randomIndex = Math.round(Math.random() * 2);
+//    if (i % 2 === 0) {
+//     console.log(`${i}. ${phrases[randomIndex]}`);
+//    } else {
+//     console.log(`${i}. Love me, pet me! HSSSSSS!`)
+//    }
+// }
+
+// Find the Median
+
+const getMedian = (arr) => {
+    const middleIndex = Math.floor(arr.length / 2);
+    console.log('mid', middleIndex)
+      const sortedArr = [...arr].sort((a, b) => a - b);
+      console.log('nums', sortedArr)
+    return arr.length % 2 !== 0 ? sortedArr[middleIndex] : (sortedArr[middleIndex - 1] + sortedArr[middleIndex]) / 2;
+  };
+  console.log(getMedian([14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]));
