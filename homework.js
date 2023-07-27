@@ -1,129 +1,129 @@
-// // Easy Going
+// Easy Going
 
-// for (let i = 1; i <= 20; i++) {
-//     console.log(i);
-// }
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
 
-// // Get Even
+// Get Even
 
-// for (let i = 0; i <= 200; i++) {
+for (let i = 0; i <= 200; i++) {
 
-//     if (i % 2 === 0 && i !== 0) {
-//         console.log(i);
-//     }
-// }
+    if (i % 2 === 0 && i !== 0) {
+        console.log(i);
+    }
+}
 
-// // Fizz Buzz
+// Fizz Buzz
 
-// for (let i = 1; i <= 100; i++) {
-//     if (i % 3 === 0 && i % 5 === 0) {
-//         console.log('FizzBuzz')
-//     } else if (i % 3 === 0) {
-//         console.log('Fizz')
-//     } else if (i % 5 === 0) {
-//         console.log('Buzz')
-//     } else {
-//         console.log(i);
-//     }
-// }
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz')
+    } else if (i % 3 === 0) {
+        console.log('Fizz')
+    } else if (i % 5 === 0) {
+        console.log('Buzz')
+    } else {
+        console.log(i);
+    }
+}
 
-// // Wild Wild Life
+// Wild Wild Life
 
-// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
-// const sharky = ["Sharky", "shark", 20, "Left Coast"];
-// const plantee = ["Plantee", "plant",  5000 , "Mordor"];
-// const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
-// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"];
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+const sharky = ["Sharky", "shark", 20, "Left Coast"];
+const plantee = ["Plantee", "plant",  5000 , "Mordor"];
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"];
 
-// plantee[2] += 1;
-// console.log(plantee);
-// wolfy[3] = 'Gotham City';
-// console.log(wolfy);
-// dart.push('Hawkins');
-// console.log(dart);
-// wolfy[0] = 'Gameboy';
-// console.log(wolfy);
+plantee[2] += 1;
+console.log(plantee);
+wolfy[3] = 'Gotham City';
+console.log(wolfy);
+dart.push('Hawkins');
+console.log(dart);
+wolfy[0] = 'Gameboy';
+console.log(wolfy);
 
-// // Yell at the Ninja Turtles
+// Yell at the Ninja Turtles
 
-// const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
-// for (let turtle of ninjaTurtles) {
-//     console.log(turtle.toLocaleUpperCase());
-// }
+for (let turtle of ninjaTurtles) {
+    console.log(turtle.toLocaleUpperCase());
+}
 
-// // Methods, Revisited
+// Methods, Revisited
 
-// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-// console.log(favMovies.indexOf('Titanic'));
+console.log(favMovies.indexOf('Titanic'));
 
-// const newFavMovies = [...favMovies];
+const newFavMovies = [...favMovies];
 
-// newFavMovies.sort();
-// console.log(newFavMovies);
+newFavMovies.sort();
+console.log(newFavMovies);
 
-// favMovies.pop();
+favMovies.pop();
 
-// favMovies.push('Guardians of the Galaxy');
+favMovies.push('Guardians of the Galaxy');
 
-// favMovies.reverse();
+favMovies.reverse();
 
-// favMovies.shift();
+favMovies.shift();
 
-// const newLength = favMovies.unshift();
+const newLength = favMovies.unshift();
 
-// const index = favMovies.indexOf('Django Unchained');
+const index = favMovies.indexOf('Django Unchained');
 
-// favMovies.splice(index, 1, 'Avatar');
-// const arrLength = favMovies.length;
+favMovies.splice(index, 1, 'Avatar');
+const arrLength = favMovies.length;
 
-// const middleIndex = arrLength/2;
+const middleIndex = arrLength/2;
 
-// const slicedArr = favMovies.slice(middleIndex);
+const slicedArr = favMovies.slice(middleIndex);
 
-// console.log(slicedArr);
-// console.log(favMovies);
-// console.log(favMovies.indexOf('Fast and Furious'));
+console.log(slicedArr);
+console.log(favMovies);
+console.log(favMovies.indexOf('Fast and Furious'));
 
-// // Where is Waldo
+// Where is Waldo
 
-// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", ["Lucinda", "Jacc", "Neff", "Snoop"], ["Petunia", ["Baked Goods", "Waldo"]]];
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", ["Lucinda", "Jacc", "Neff", "Snoop"], ["Petunia", ["Baked Goods", "Waldo"]]];
 
-// whereIsWaldo.splice(1, 1);
+whereIsWaldo.splice(1, 1);
 
-// whereIsWaldo[1][2] = "No One";
+whereIsWaldo[1][2] = "No One";
 
-// console.log(whereIsWaldo);
+console.log(whereIsWaldo);
 
-// console.log(whereIsWaldo[2][1][1]);
+console.log(whereIsWaldo[2][1][1]);
 
-// // Excited Kitten
+// Excited Kitten
 
-// for (let i = 1; i <= 20; i++) {
-//     console.log(`${i}. Love me, pet me! HSSSSSS!`);
-// }
+for (let i = 1; i <= 20; i++) {
+    console.log(`${i}. Love me, pet me! HSSSSSS!`);
+}
 
-// for (let i = 1; i <= 20; i++) {
-//    const phrases = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...' ];
-//    const randomIndex = Math.round(Math.random() * 2);
-//    if (i % 2 === 0) {
-//     console.log(`${i}. ${phrases[randomIndex]}`);
-//    } else {
-//     console.log(`${i}. Love me, pet me! HSSSSSS!`)
-//    }
-// }
+for (let i = 1; i <= 20; i++) {
+   const phrases = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...' ];
+   const randomIndex = Math.round(Math.random() * 2);
+   if (i % 2 === 0) {
+    console.log(`${i}. ${phrases[randomIndex]}`);
+   } else {
+    console.log(`${i}. Love me, pet me! HSSSSSS!`)
+   }
+}
 
-// // Find the Median
+// Find the Median
 
-// const getMedian = (arr) => {
-//     const middleIndex = Math.floor(arr.length / 2);
-//     console.log('mid', middleIndex)
-//       const sortedArr = [...arr].sort((a, b) => a - b);
-//       console.log('nums', sortedArr)
-//     return arr.length % 2 !== 0 ? sortedArr[middleIndex] : (sortedArr[middleIndex - 1] + sortedArr[middleIndex]) / 2;
-//   };
-//   console.log(getMedian([14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]));
+const getMedian = (arr) => {
+    const middleIndex = Math.floor(arr.length / 2);
+    console.log('mid', middleIndex)
+      const sortedArr = [...arr].sort((a, b) => a - b);
+      console.log('nums', sortedArr)
+    return arr.length % 2 !== 0 ? sortedArr[middleIndex] : (sortedArr[middleIndex - 1] + sortedArr[middleIndex]) / 2;
+  };
+  console.log(getMedian([14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]));
 
 // Return of the Closets
 
