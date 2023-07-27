@@ -179,3 +179,15 @@ const tomsOutfit = {
 
 console.log(`Kristyn is wearing ${kristynsOutfit.accessories}, ${kristynsOutfit.shirt}, ${kristynsOutfit.pants}.`);
 console.log(`Tom is wearing ${tomsOutfit.accessories}, ${tomsOutfit.shirt}, ${tomsOutfit.pants}.`);
+
+// Dirty Laundry
+
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+// Inventory
+
+console.log(thomsCloset[0]);
+console.log(thomsCloset[1]);
+console.log(thomsCloset[2]);
