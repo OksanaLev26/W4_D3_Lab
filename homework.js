@@ -54,34 +54,46 @@
 
 // Methods, Revisited
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-console.log(favMovies.indexOf('Titanic'));
+// console.log(favMovies.indexOf('Titanic'));
 
-const newFavMovies = [...favMovies];
+// const newFavMovies = [...favMovies];
 
-newFavMovies.sort();
-console.log(newFavMovies);
+// newFavMovies.sort();
+// console.log(newFavMovies);
 
-favMovies.pop();
+// favMovies.pop();
 
-favMovies.push('Guardians of the Galaxy');
+// favMovies.push('Guardians of the Galaxy');
 
-favMovies.reverse();
+// favMovies.reverse();
 
-favMovies.shift();
+// favMovies.shift();
 
-const newLength = favMovies.unshift();
+// const newLength = favMovies.unshift();
 
-const index = favMovies.indexOf('Django Unchained');
+// const index = favMovies.indexOf('Django Unchained');
 
-favMovies.splice(index, 1, 'Avatar');
-const arrLength = favMovies.length;
+// favMovies.splice(index, 1, 'Avatar');
+// const arrLength = favMovies.length;
 
-const middleIndex = arrLength/2;
+// const middleIndex = arrLength/2;
 
-const slicedArr = favMovies.slice(middleIndex);
+// const slicedArr = favMovies.slice(middleIndex);
 
-console.log(slicedArr);
-console.log(favMovies);
-console.log(favMovies.indexOf('Fast and Furious'));
+// console.log(slicedArr);
+// console.log(favMovies);
+// console.log(favMovies.indexOf('Fast and Furious'));
+
+// Where is Waldo
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", ["Lucinda", "Jacc", "Neff", "Snoop"], ["Petunia", ["Baked Goods", "Waldo"]]];
+
+whereIsWaldo.splice(1, 1);
+
+whereIsWaldo[1][2] = "No One";
+
+console.log(whereIsWaldo);
+
+console.log(whereIsWaldo[2][1][1]);
